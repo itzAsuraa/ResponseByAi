@@ -42,7 +42,7 @@ We welcome feedback and contributions from the community to improve and expand t
 
 - **Support Group**: Join our support group on Telegram for discussions, feedback, and assistance: [Asuraa Support](https://t.me/AsuraaSupports).
 - **Creator's Profile**: Connect with the creator on Telegram: [@itzAsuraa](https://t.me/itzAsuraa).
-- **Website**: Visit the creator's website for more information: [itzAsuraa's Website](https://itzasuraa.pages.dev).
+- **Website**: Visit the creator's website for more information: [Code Search Website](https://codesearch.pages.dev).
 
 ## License
 
