@@ -20,7 +20,7 @@ class Bot(Client):
     async def start(self):
         await super().start()
         me = await self.get_me()
-        await self.send_message(OWNER_ID, f"**__{me.first_name} is started.....**")
+        await self.send_message(OWNER_ID, f"**__{me.first_name} is started.....__**")
         logger.info(f"Bot {me.first_name} started as @{me.username}")
 
     async def stop(self, *args):
