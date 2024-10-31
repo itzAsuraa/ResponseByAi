@@ -53,7 +53,7 @@ async def handle_mention(client: Client, message: Message):
         model_name = get_model_from_db(message.chat.id)
         await send_typing_action(client, message.chat.id)
         api_response = ask_query(user_text, model_name)
-        await message.reply(f"🤖 <b>{api_response}</b> 🍌")
+        await message.reply(f"🤖 <b>{api_response}</b>")
     else:
         await message.reply("<b>👋 Please ask a question after mentioning me! I’m here to help! 😊</b>")
         
