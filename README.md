@@ -83,7 +83,7 @@ Commands
 
 ## Model Selection and Customization ⚙️
 
-If you’re not satisfied with the selected model, you can either switch to a different one or add new models by creating a custom file. Adjust as needed, following the guidance on [Code Search](https://codesearch.pages.dev).
+If you’re not satisfied with the selected model, you can either switch to a different one or add new models by creating a custom file. Adjust as needed, following the guidance on [Code Search API Docs](https://codesearch.pages.dev).
 
 ### Steps to Change or Add a Model ✏️
 1. **To Change the Model** 🔄: Update the model configuration in the existing setup.
