@@ -69,7 +69,6 @@ async def handle_button_click(client, callback_query):
             "✨ Ready to explore? Use the commands below to ask me anything under the sun! ☀️\n\n"
             "/gpt - **Ask me anything with GPT-4o!** 💡\n"
             "/gemini - **Dive deep into questions with Gemini-Pro!** 🌌\n"
-            "/google - **Unlock the power of Google for instant answers!** 🌍\n"
             "/llama - **Experience creativity with Llama-3.1-405b!** 🦙\n"
             "/blackbox - **Curious about BlackBoxAI-Pro? Just ask!** 📦"
         )
