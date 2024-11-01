@@ -81,6 +81,15 @@ Commands
 
 3. Image Generation: Once the feature goes live, type /draw A futuristic city at sunset to get an AI-generated image based on your description.
 
+## Model Selection and Customization ⚙️
+
+If you’re not satisfied with the selected model, you can either switch to a different one or add new models by creating a custom file. Adjust as needed, following the guidance on [Code Search](https://codesearch.pages.dev).
+
+### Steps to Change or Add a Model ✏️
+1. **To Change the Model** 🔄: Update the model configuration in the existing setup.
+2. **To Add a New Model** ➕: Create a new file and add your desired model configuration.
+
+Feel free to experiment and find the best model for your needs! 🚀
 
 ### 💬 Feedback and Contributions
 
