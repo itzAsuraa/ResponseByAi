@@ -46,5 +46,5 @@ async def handle_query(client, message):
 
     # Send the response with user mention
     await message.reply_text(
-        f"{user_mention}, here’s what I found for you:\n\n<b>{response}</b>"
+        f"{user_mention}, <b>{response}</b>"
     )
