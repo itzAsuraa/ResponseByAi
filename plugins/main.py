@@ -84,7 +84,7 @@ async def handle_button_click(client, callback_query):
     elif callback_query.data == "about":
         about_message = (
             "**ℹ️ About This Bot**\n\n"
-            "👤 **Owner:** 🇮🇳 𝐓ʜᴇ 𝐂ᴀᴘᴛᴀɪɴ\n"
+            "👤 **Owner:** ⏤͟͟͞͞🇮🇳𝐓ʜᴇ 𝐂ᴀᴘᴛᴀɪɴ's </>\n"
             "🤖 **Functionality:**\n"
             "- Fast and accurate answers to your questions! ⚡\n"
             "- Generate beautiful images based on your prompts! 🎨\n"
