@@ -52,9 +52,9 @@ async def handle_button_click(client, callback_query):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("🌟 ʜᴇʟᴘ", callback_data="help"),
-             InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")],
+             InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")],
             [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/C0DE_SEARCH"),
-             InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")]
+             InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
 
         await edit_message(client, callback_query, welcome_message, keyboard)
@@ -94,7 +94,7 @@ async def handle_button_click(client, callback_query):
         )
         about_keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
-             InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
+             InlineKeyboardButton("🔗 ʀᴇᴘᴏ", url="https://github.com/itzAsuraa/ResponseByAi")]
         ])
         await edit_message(client, callback_query, about_message, about_keyboard)
 
