@@ -5,7 +5,7 @@ import asyncio
 from info import *
 
 # Function to query the AI API
-def ask_query(query, model='blackbox'):
+def ask_query(query, model='blackboxai'):
     try:
         # Encode the query for URL safety
         encoded_query = urllib.parse.quote(query)
