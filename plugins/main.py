@@ -21,9 +21,9 @@ async def start_command(client, message):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("🌟 ʜᴇʟᴘ", callback_data="help"),
-         InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")],
+         InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")],
         [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/C0DE_SEARCH"),
-         InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ", callback_data="about")]
+         InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
     ])
 
     await client.send_photo(chat_id=message.chat.id, photo="https://envs.sh/p_g.jpg", caption=welcome_message, reply_markup=keyboard)
