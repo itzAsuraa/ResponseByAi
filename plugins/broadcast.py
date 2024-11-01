@@ -29,7 +29,7 @@ async def broadcasting_func(client, message):
 
         bmsg = await bmsg.edit(f"📢 Broadcasting audio with caption:\n\n<b>{broadcast_text}</b>")
 
-        for userDoc in userList.find():
+        async for userDoc in userList.find():
             userId = userDoc["userId"]
             try:
                 await client.send_audio(
@@ -57,7 +57,7 @@ async def broadcasting_func(client, message):
     else:
         bmsg = await bmsg.edit(f"📝 Broadcasting message:\n\n<b>{broadcast_text}</b>")
 
-        for userDoc in userList.find():
+        async for userDoc in userList.find():
             userId = userDoc["userId"]
             try:
                 await client.send_message(
