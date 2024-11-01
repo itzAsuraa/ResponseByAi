@@ -5,7 +5,7 @@ db = client["ResponseByAi"]
 userList = db.userList
 
 async def total_users():
-    count = await UserList.count_documents({})
+    count = await userList.count_documents({})
     return count
 
 def addUser(userId , userName):
