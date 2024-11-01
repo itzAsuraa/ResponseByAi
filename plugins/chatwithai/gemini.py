@@ -5,7 +5,7 @@ import asyncio
 from info import *
 
 # Function to query the AI API
-def ask_query(query, model='gemini'):
+def ask_query(query, model='gemini-pro'):
     try:
         # Encode the user query for safe URL handling
         encoded_query = urllib.parse.quote(query)
