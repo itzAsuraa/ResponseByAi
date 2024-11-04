@@ -5,7 +5,8 @@ from database import *
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start_command(client, message):
-    userMention = message.from_user.mention()
+    userMention = message.from_user.mention() 
+    # Check for forced subscription requirement
     if FSUB and not await get_fsub(client, message):
         return
 
@@ -13,9 +14,6 @@ async def start_command(client, message):
         "**👋 Welcome to Response By Ai!**\n\n"
         "🤖 I'm your personal AI assistant, crafted with love by ⏤͟͟͞͞ 🇮🇳 𝐓ʜᴇ 𝐂ᴀᴘᴛᴀɪɴ.\n\n"
         "✨ **Here’s what I can do for you:**\n"
-        "1. Answer your queries with lightning speed! ⚡\n"
-        "2. Generate stunning images that spark your imagination! 🎨\n"
-        "3. Engage in delightful conversations that brighten your day! 💬\n\n"
         "Just click the buttons below to get started on this exciting journey! 🚀"
     )
 
@@ -44,9 +42,6 @@ async def handle_button_click(client, callback_query):
             "**👋 Welcome to Response By Ai!**\n\n"
             "🤖 I'm your personal AI assistant, crafted with love by ⏤͟͟͞͞ 🇮🇳 𝐓ʜᴇ 𝐂ᴀᴘᴛᴀɪɴ.\n\n"
             "✨ **Here’s what I can do for you:**\n"
-            "1. Answer your queries with lightning speed! ⚡\n"
-            "2. Generate stunning images that spark your imagination! 🎨\n"
-            "3. Engage in delightful conversations that brighten your day! 💬\n\n"
             "Just click the buttons below to get started on this exciting journey! 🚀"
         )
 
@@ -65,12 +60,7 @@ async def handle_button_click(client, callback_query):
              InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
         chat_message = (
-            "**💬 Let's Chat with AI!**\n\n"
-            "✨ Ready to explore? Use the commands below to ask me anything under the sun! ☀️\n\n"
-            "/gpt - **Ask me anything with GPT-4o!** 💡\n"
-            "/gemini - **Dive deep into questions with Gemini-Pro!** 🌌\n"
-            "/llama - **Experience creativity with Llama-3.1-405b!** 🦙\n"
-            "/blackbox - **Curious about BlackBoxAI-Pro? Just ask!** 📦"
+            "**💬 Let’s Dive into a Conversation with AI!**\n\n ✨**Ready to explore?** Just use the commands below to unlock endless possibilities! ☀️\n\n✔️ **Got a burning question?** \n Fire away /ask and let ResponseByAi provide you with insightful answers! 💡\n\nJoin the conversation and see what wonders await!"
         )
         await edit_message(client, callback_query, chat_message, chat_keyboard)
 
@@ -79,7 +69,7 @@ async def handle_button_click(client, callback_query):
             [InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
              InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
-        await edit_message(client, callback_query, "**🖼️ Image Generation Awaits!**\n\n🎨 Just type **/draw** followed by your description, and watch the magic happen! ✨", image_keyboard)
+        await edit_message(client, callback_query, "**🖼️ Your Creative Journey Starts Here!**\n\n\n🎨** Ready to unleash your imagination?** Just type **/draw** followed by your description, and watch as your words transform into stunning art work! ✨\n\n📸 **Want to bring your ideas to life?** Simply type **/scan_ph** with your image description, and let our AI craft a masterpiece just for you! 🔍✨\n\n\n**Get started now and see what magic awaits!**", image_keyboard)
 
     elif callback_query.data == "about":
         about_message = (
