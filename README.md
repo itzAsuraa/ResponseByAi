@@ -63,10 +63,7 @@ After deployment, start a chat with the bot on Telegram to explore its features.
 Commands
 
 - **/start**– Start the bot and receive a welcome message.
-- **/gpt** – Ask questions and get responses powered by GPT-4.
-- **/gemini** – Deep-dive into queries with Gemini-Pro.
-- **/google** – Search Google for instant answers.
-- **/llama** – Generate creative answers using Llama-3.1-405b.
+- **/ask** – Ask questions and get responses powered by Response By Ai.
 - **/draw** – Generate images from descriptions.
 - **/scan_ph** – Scan and describe any image based on your prompts.
 
@@ -76,7 +73,7 @@ Commands
 1. Getting Started: Type /start to explore the main menu and features.
 
 
-2. Ask a Question: Use /gpt What’s the weather today? for quick, accurate information.
+2. Ask a Question: Use /ask What’s the weather today? for quick, accurate information.
 
 
 3. Image Generation: Once the feature goes live, type /draw A futuristic city at sunset to get an AI-generated image based on your description.
