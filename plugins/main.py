@@ -60,7 +60,7 @@ async def handle_button_click(client, callback_query):
              InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
         chat_message = (
-            "**💬 Let’s Dive into a Conversation with AI!**\n\n ✨**Ready to explore?** Just use the commands below to unlock endless possibilities! ☀️\n\n✔️ **Got a burning question?** \n Fire away /ask and let ResponseByAi provide you with insightful answers! 💡\n\nJoin the conversation and see what wonders await!"
+            "**💬 Let’s Dive into a Conversation with AI!**\n\n ✨**Ready to explore?** Just use the commands below to unlock endless possibilities! ☀️\n\n✔️ **Got a question?** \n Send your question using **/ask**, and get valuable answers from ResponseByAi! 💡\n\nJoin the conversation and see what wonders await!"
         )
         await edit_message(client, callback_query, chat_message, chat_keyboard)
 
@@ -69,7 +69,7 @@ async def handle_button_click(client, callback_query):
             [InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="help"),
              InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
-        await edit_message(client, callback_query, "**🖼️ Your Creative Journey Starts Here!**\n\n\n🎨** Ready to unleash your imagination?** Just type **/draw** followed by your description, and watch as your words transform into stunning art work! ✨\n\n📸 **Want to bring your ideas to life?** Simply type **/scan_ph** with your image description, and let our AI craft a masterpiece just for you! 🔍✨\n\n\n**Get started now and see what magic awaits!**", image_keyboard)
+        await edit_message(client, callback_query, "**🖼️ Your Creative Journey Starts Here!**\n\n\n**🎨 Unleash Your Creativity!** \n Type **/draw** followed by your vision, like “A futuristic city at sunset,” and watch as your imagination comes to life with stunning AI-generated artwork! ✨\n\n**📸 Transform Your Ideas!** \nGet ready for Image, you’ll be able to type **/scan_ph** along with your image description to let our AI create detailed descriptions and captivating images based on your prompts. 🔍✨\n\n\n**Get started now and see what magic awaits!**", image_keyboard)
 
     elif callback_query.data == "about":
         about_message = (
