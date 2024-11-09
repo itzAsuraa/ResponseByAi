@@ -65,33 +65,6 @@ async def handle_mention(client: Client, message: Message):
     else:
         await message.reply("<b>👋 Please ask a question after mentioning me! I’m here to help! 😊</b>")
 
-@Client.on_message(filters.text)  # Removed ~filters.private to enable DM responses
-async def handle_query(client, message):
-    # Ensure the user has subscribed (if FSUB is enabled)
-    if FSUB and not await get_fsub(client, message):
-        return
-
-    # Extract the text from the message
-    user_text = message.text.strip()
-
-    if user_text:
-        # Simulate typing action
-        await send_typing_action(client, message.chat.id)
-
-        # Process the user query
-        reply = ask_query(user_text)
-
-        # Get the user's mention to customize the response (mention not used in private chats)
-        if message.chat.type == "private":
-            await message.reply_text(f"<b>{reply}</b> 🚀")
-        else:
-            user_mention = message.from_user.mention
-            await message.reply_text(f"{user_mention}, <b>{reply}</b> 🚀")
-    else:
-        # If no valid query is found, prompt the user to ask a question
-        await message.reply_text("<b>📝 Please provide a query to ask ResponseByAi! Don't be shy, let's chat! 🤖💬.</b>")
-
-
 # Simulate Typing Action
 async def send_typing_action(client, chat_id, duration=1):
     """
