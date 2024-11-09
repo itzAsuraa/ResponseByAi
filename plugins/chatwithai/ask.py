@@ -42,9 +42,9 @@ async def ask_query_command(client, message):
         # Call the ask_query function to process the user query
         reply = ask_query(user_query)  
         user_mention = message.from_user.mention
-        await message.reply_text(f"{user_mention}, <b>{reply}</b> 🚀")
+        await message.reply_text(f"{user_mention}, {reply} 🚀")
     else:
-        await message.reply_text("<b>📝 Please provide a query to ask ResponseByAi! Don't be shy, let's chat! 🤖💬.</b>")
+        await message.reply_text("📝 Please provide a query to ask ResponseByAi! Don't be shy, let's chat! 🤖💬.")
 
 @Client.on_message(filters.mentioned & filters.group)
 async def handle_mention(client: Client, message: Message):
@@ -61,9 +61,9 @@ async def handle_mention(client: Client, message: Message):
         # Call the ask_query function to process the user query
         reply = ask_query(user_text)
         user_mention = message.from_user.mention
-        await message.reply_text(f"{user_mention}, <b>{reply}</b> 🚀")
+        await message.reply_text(f"{user_mention}, {reply} 🚀")
     else:
-        await message.reply("<b>👋 Please ask a question after mentioning me! I’m here to help! 😊</b>")
+        await message.reply("👋 Please ask a question after mentioning me! I’m here to help! 😊")
 
 # Simulate Typing Action
 async def send_typing_action(client, chat_id, duration=1):
