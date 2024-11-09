@@ -13,22 +13,22 @@ async def scan_ph(client, message):
 
     reply = message.reply_to_message    
     if not reply:
-        return await message.reply_text("📸 **Please reply to a photo to use this command!**")
+        return await message.reply_text("📸 Please reply to a photo to use this command!")
     elif not reply.photo:
-        return await message.reply_text("📸 **The replied message is not a photo!**")
+        return await message.reply_text("📸 The replied message is not a photo!")
     elif reply.video:
-        return await message.reply_text("📸 **Please reply to a photo, not a video!**")
+        return await message.reply_text("📸 Please reply to a photo, not a video!")
 
     query = message.text.split(" ", 1)[1] if len(message.text.split(" ")) > 1 else ""    
     if not query:
-        return await message.reply_text("❗ **Please provide a query! For example: `/scan_ph tell me about this image`**")
+        return await message.reply_text("❗ Please provide a query! For example: `/scan_ph tell me about this image`")
 
-    k = await message.reply_text(f"🔍 **{message.from_user.mention}, Please wait while I check...**")
+    k = await message.reply_text(f"🔍 {message.from_user.mention}, Please wait while I check...")
 
     try:
         media = await reply.download()
 
-        m = await k.edit("✅ **Successfully downloaded the image, now checking your query...**")
+        m = await k.edit("✅ Successfully downloaded the image, now checking your query...")
 
         # Create an ImageUploader instance
         mag = ImageUploader(media)
@@ -42,9 +42,9 @@ async def scan_ph(client, message):
         # Check if the request was successful
         if response.status_code == 200:
             result = response.json()
-            await m.edit(f"👤 **{message.from_user.mention}, here's what I found: {result['response']}**")
+            await m.edit(f"👤 {message.from_user.mention}, here's what I found: {result['response']}")
         else:
-            await m.edit("⚠️ **There was an error processing your request. Please try again later.**")
+            await m.edit("⚠️ There was an error processing your request. Please try again later.")
     except Exception as e:
         await m.edit("❌ **An error occurred while processing your request.**")
         print(f"Error: {e}")  # Log the error for debugging
