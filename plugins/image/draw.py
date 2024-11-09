@@ -10,7 +10,7 @@ def generate_long_query(query):
 @Client.on_message(filters.command("draw"))
 async def draw_image(client, message):
     if len(message.command) < 2:
-        await message.reply_text("**Please provide a query to generate an image.** 😊")
+        await message.reply_text("Please provide a query to generate an image.😊")
         return
 
     # Generate a long query for better image results
@@ -31,7 +31,7 @@ async def draw_image(client, message):
                         image_urls = image_data["image_urls"]
                         if image_urls:
                             await wait_message.delete()
-                            await message.reply_photo(photo=image_urls[0], caption=f"**Generated Image for: {user_query}** 🖼️")
+                            await message.reply_photo(photo=image_urls[0], caption=f"Generated Image for: {user_query} 🖼️")
                         else:
                             await wait_message.edit_text("No images were returned. Please try again. ❌")
                     else:
