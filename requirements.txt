@@ -3,7 +3,9 @@ tgcrypto
 pytz
 requests
 flask
+httpx 
 pymongo
-gunicorn==22.0.0
+gunicorn==20.1.0
 pyrofork
 aiohttp
+Mangandi
