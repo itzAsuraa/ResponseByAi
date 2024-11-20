@@ -80,8 +80,8 @@ Commands
 
 ### 📞 Support
 
-Telegram Support Group: Join the community on [Asuraa Support](https://t.me/AsuraaSupports).
-Creator's Profile: Connect with the creator on Telegram: [@itzAsuraa](https://t.me/itzAsuraa).
+Telegram Support Group: Join the community on [Mishra Support](https://t.me/mishraXhub).
+Creator's Profile: Connect with the creator on Telegram: [@BRAND_BRAHMAN](https://t.me/BRAND_BRAHMAN).
 
 ### 📜 License
 
