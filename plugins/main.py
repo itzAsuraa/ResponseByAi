@@ -60,7 +60,7 @@ async def handle_button_click(client, callback_query):
              InlineKeyboardButton("🛠️ sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")]
         ])
         chat_message = (
-            "**💬 Let’s Dive into a Conversation with AI!**\n\n ✨**Ready to explore?** Just use the commands below to unlock endless possibilities! ☀️\n\n✔️ **Got a question?** \n Send your question using **/ask**, and get valuable answers from Mistral! 💡\n\nJoin the conversation and see what wonders await!"
+            "**💬 Let’s Dive into a Conversation with AI!**\n\n ✨**Ready to explore?** Just use the commands below to unlock endless possibilities! ☀️\n\n✔️ **Got a question?** \n Send your question using **/ask**, and get valuable answers from OpenAI!💡\n\nJoin the conversation and see what wonders await!"
         )
         await edit_message(client, callback_query, chat_message, chat_keyboard)
 
