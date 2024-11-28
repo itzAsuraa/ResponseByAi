@@ -1,10 +1,13 @@
-import re
-from os import environ, getenv
+from dotenv import load_dotenv
 
-API_ID = environ.get("API_ID", "")
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-OWNER_ID = int(environ.get("OWNER_ID", ""))
-MONGO_URL = environ.get("MONGO_URL", "")
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", ""))
-FSUB = environ.get("FSUB", True)
+load_dotenv()
+
+from os import getenv
+
+API_ID = getenv("API_ID", "")
+API_HASH = getenv("API_HASH", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+OWNER_ID = int(getenv("OWNER_ID", ""))
+MONGO_URL = getenv("MONGO_URL", "")
+AUTH_CHANNEL = int(getenv("AUTH_CHANNEL", ""))
+FSUB = getenv("FSUB", True)
